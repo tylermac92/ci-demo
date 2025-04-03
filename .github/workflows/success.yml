@@ -1,0 +1,12 @@
+name: Success Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run a successful command
+        run: |
+          echo "Starting successful build..."
+          echo "Build completed successfully!"
